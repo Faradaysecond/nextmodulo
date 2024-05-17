@@ -1,0 +1,211 @@
+@media (min-width: 992px) {
+	.header {
+		height: 100vh;
+		background-size: cover;
+		background-position: -8em 0;
+
+		&::after {
+			width: 60%;
+			background: rgb(26, 30, 46);
+			background: linear-gradient(
+				90deg,
+				rgba(26, 30, 46, 0) 0%,
+				rgba(26, 30, 46, 1) 100%
+			);
+		}
+
+		&__content {
+			display: inline;
+			text-align: right;
+			top: 50%;
+			right: 0%;
+			z-index: 3;
+
+			h1 {
+				color: c.$pure-white;
+			}
+			p {
+				display: block;
+				margin: 2.4rem 0;
+				color: c.$pure-white;
+			}
+			.main-btn {
+				margin-left: 3rem;
+			}
+		}
+		&__social-bar {
+			justify-content: space-between;
+			align-items: center;
+			transform: translate(0%, 0%);
+			left: 0%;
+			bottom: 0%;
+			width: 150px;
+
+			a {
+				i {
+					transition: color 0.3s;
+				}
+
+				&:hover > i {
+					color: c.$dirty-whit;
+				}
+			}
+		}
+	}
+	.nav {
+		&__burger-btn {
+			display: none;
+		}
+
+		&__menu {
+			display: block;
+
+			.main-btn {
+				margin-left: 1rem;
+				i {
+					font-size: 15px;
+					margin-right: 5px;
+				}
+			}
+		}
+		&__logo {
+			h2 {
+				font-size: 35px;
+			}
+		}
+	}
+	.menu-mobile {
+		display: none;
+	}
+	.abaout {
+		&__bootom {
+			margin-right: 10rem;
+		}
+	}
+	.mortgage {
+		overflow: hidden;
+		background-image: url(/img/wnętrza.jpg);
+		background-size: cover;
+		z-index: 1;
+
+		&::after {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: c.$main-color;
+			opacity: 0.97;
+			z-index: -1;
+		}
+
+		&__content {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr;
+			z-index: 3;
+		}
+		&__box {
+			position: relative;
+			grid-row: 1/-1;
+
+			&--image {
+				display: block;
+
+				img {
+					position: absolute;
+					width: 120%;
+					bottom: -100px;
+				}
+			}
+		}
+		&__partners-bar {
+			img {
+				padding-right: 2rem;
+				width: 220px;
+				height: 70px;
+			}
+		}
+	}
+	.project {
+		&__box-blog {
+			img {
+				height: 200px;
+			}
+			p {
+				display: block;
+			}
+		}
+	}
+	.order {
+		&__content {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr;
+			gap: 4rem;
+		}
+		&__steps-list-itrm {
+			&--one {
+				top: 30%;
+			}
+			&--two {
+				top: 30%;
+			}
+			&--three {
+				top: 30%;
+			}
+			p {
+				display: block;
+			}
+		}
+        &__text{
+            .main-btn{
+                margin-top: 12rem;
+            }
+            p{
+                padding: 8rem 0;
+            }
+        }
+	}
+	.footer {
+		.header__social-bar {
+			display: block;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.header {
+		background-size: 110%;
+		background-position: -5em 0em;
+	}
+	.nav {
+		&__menu {
+			.main-btn {
+				margin-left: 8rem;
+			}
+		}
+	}
+	.abaout {
+		&__bootom {
+			margin-right: 14rem;
+		}
+	}
+	.mortgage {
+		&__box {
+			position: relative;
+			grid-row: 1/-1;
+
+			&--image {
+				display: block;
+
+				img {
+					position: absolute;
+					width: 90%;
+					bottom: -100px;
+				}
+			}
+		}
+	}
+}

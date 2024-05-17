@@ -1,0 +1,72 @@
+.how-to-order {
+	margin-top: 200px;
+
+	&__top {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-auto-rows: 1fr;
+		overflow: hidden;
+	}
+	&__text {
+		padding: 3rem 1.5rem 5rem;
+		background-color: c.$main-color;
+		color: c.$pure-white;
+
+		.section-title {
+			margin-bottom: 5rem;
+		}
+
+		.main-btn {
+			margin-top: 5rem;
+		}
+	}
+	&__img {
+		display: none;
+		background-image: url(/img/konsultant.png);
+		background-position: center 0;
+		background-size: 70%;
+		background-repeat: no-repeat;
+	}
+
+	&__content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(7, auto);
+	}
+	&__acc-box {
+		border: 2px solid c.$main-color;
+		padding: 1.5rem;
+
+		h3 {
+			padding: 1rem 0;
+		}
+
+		.acc-title {
+			display: flex;
+			align-items: center;
+			padding: 0.5rem 0;
+			cursor: pointer;
+			p {
+				font-size: 2.2rem;
+				margin-left: 1.5rem;
+			}
+			i {
+				transition: all 0.3s;
+			}
+		}
+		.acc-content {
+			background-color: #aca8a8;
+			height: 0;
+			overflow: hidden;
+			font-size: 1.8rem;
+			transition: all 0.3s;
+		}
+	}
+}
+.order-add-height {
+	padding: 1rem 0rem;
+	height: fit-content !important;
+}
+.rotate-icon {
+	transform: rotate(90deg);
+}
